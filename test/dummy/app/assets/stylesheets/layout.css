@@ -1,0 +1,23 @@
+
+body {
+  background-color: #CCC;
+  font-family: Helvetica, Arial, sans-serif;
+  margin: 0;
+  background: -webkit-linear-gradient(#CCC, #AAA);
+  background-attachment: fixed;
+}
+
+.container {
+  background-color: white;
+  color: black;
+  font-size: 10pt;
+  line-height: 18px;
+  margin: 40px auto;
+  max-width: 750px;
+  min-width: 200px;
+
+  border-radius: 5px;
+  -webkit-box-shadow: 2px 5px 12px #555;
+  padding: 20px;
+  width: 80%;
+}

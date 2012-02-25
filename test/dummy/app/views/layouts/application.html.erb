@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Dummy</title>
+  <%= stylesheet_link_tag    "application", :media => "all" %>
+  <%= javascript_include_tag "application" %>
+  <%= csrf_meta_tags %>
+</head>
+<body class="<%= "#{controller_name} #{action_name}" -%>">
+
+<header>
+  <%if current_user %>
+    logged as: <%= current_user.email %>
+    <%= link_to "Sign up", new_registration_path(:user)%>
+  <% else %>
+    <%= link_to "Sign up", new_registration_path(:user)%>
+  <% end %>
+
+<header/>
+<end>
+
+<div class="container">
+  <%= yield %>
+</body>
+</html>
