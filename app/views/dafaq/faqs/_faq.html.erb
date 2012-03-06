@@ -2,7 +2,7 @@
   <h2><%= faq.question%></h2>
   <p><%= faq.answer%></p>
 
-  <% if dafaq_user && dafaq_user.admin? %>
+  <% if current_user && current_user.admin? %>
     <%= link_to 'Show', faq %>
     <%= link_to 'Edit', edit_faq_path(faq) %>
     <%= link_to 'Destroy', faq, confirm: 'Are you sure?', method: :delete %>

@@ -43,7 +43,7 @@ module Dummy
     # Configure sensitive parameters which will be filtered from the log file.
     config.filter_parameters += [:password]
     Rails.application.config.to_prepare do
-#       Dafaq::ApplicationController.layout "application"
+      Dafaq::ApplicationController.layout "application"
     end
 
     # Use SQL instead of Active Record's schema dumper when creating the database.

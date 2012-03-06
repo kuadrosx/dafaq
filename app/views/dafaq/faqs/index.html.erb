@@ -1,9 +1,11 @@
+
 <h1><%=t('.title')%></h1>
 
 <% @faqs.each do |faq| %>
   <%= render "dafaq/faqs/faq", faq: faq %>
 <% end %>
-
 <br />
 
-<%= link_to 'New Faq', new_faq_path %>
+<% if current_user && current_user.admin? %>
+  <%= link_to 'New Faq', new_faq_path %>
+<% end %>
