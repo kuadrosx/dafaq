@@ -1,5 +1,5 @@
 
-class Dafaq::ApplicationController < ActionController::Base
+class Dafaq::ApplicationController < ApplicationController
   def dafaq_admin?
     current_user && dafaq_user.admin?
   end
